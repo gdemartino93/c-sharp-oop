@@ -53,6 +53,10 @@ namespace OOP
         {
             Console.WriteLine($"Ciao {nome}");
         }
+        public void Presentazione()
+        {
+            Console.WriteLine($"Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Il mio stipendio è di {Stipendio} euro");
+        }
 
     }
 }
