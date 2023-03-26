@@ -48,5 +48,11 @@ namespace OOP
             DataDiNascita = dataDiNascita;
             Citta = citta;
         }
+
+        public void Saluto(string nome)
+        {
+            Console.WriteLine($"Ciao {nome}");
+        }
+
     }
 }
