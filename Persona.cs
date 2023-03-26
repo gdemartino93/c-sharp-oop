@@ -22,7 +22,7 @@ namespace OOP
             {
                 if (value < 0)
                 {
-                    Stipendio = 0;
+                    stipendio = 0;
                 }
                 else
                 {
@@ -32,7 +32,7 @@ namespace OOP
         }
 
 
-        public Persona(string nome, string cognome, string dataDiNascita, string citta, int stipendio)
+        public Persona( string nome, string cognome, string dataDiNascita, string citta, int stipendio = 0)
         {
             Nome = nome;
             Cognome = cognome;
@@ -41,6 +41,7 @@ namespace OOP
             Stipendio = stipendio;
 
         }
+
         public Persona(string nome,string cognome,string dataDiNascita,string citta)
         {
             Nome = nome;

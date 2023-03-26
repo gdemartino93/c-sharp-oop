@@ -6,12 +6,9 @@
         {
             Persona luca = new Persona("Gianluca", "Rossi", "12/07/1993", "Barletta");
             Persona marco = new Persona("Marco", "Bianchi", "01/01/1980", "Roma", 1200);
-            //marco saluta luca
-            marco.Saluto(luca.Nome);
-            marco.Presentazione();
+            Persona anna = new Persona("Anna","Verdi", "12/12/1970", "Bari",-100);
 
-            luca.Saluto(marco.Nome);
-
+            Console.WriteLine(anna.Stipendio);
         }
     }
 }
