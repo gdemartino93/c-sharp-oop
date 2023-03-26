@@ -20,11 +20,27 @@
                 string dataDiNascita = Console.ReadLine();
                 Console.WriteLine("Inserisci la città della persona");
                 string citta = Console.ReadLine();
-                Console.WriteLine("Inserisci lo stipendio della persona");
-                int stipendio = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine("Vuoi inserire un altra persona? y/n");
-                risposta = (Console.ReadLine()).ToLower();
+                Console.WriteLine("Ha uno stipendio?");
+                Boolean haStipendio = Convert.ToBoolean( Console.ReadLine());
+                if ( haStipendio )
+                {
+                    Console.WriteLine("Inserisci lo stipendio della persona");
+                    int stipendio = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Inserisci la materia insegnata");
+                    string materia = Console.ReadLine();
+                    Docente docente = new Docente(nome, cognome, dataDiNascita, citta, stipendio, materia);
+                    docenti.Add(docente);
+                    Console.WriteLine("Vuoi inserire un altra persona? y/n");
+                    risposta = (Console.ReadLine()).ToLower();
+                }
+
+                foreach(Docente docente in docenti)
+                {
+                    Console.WriteLine(docente.Nome);
+                }
+
+          
 
  
 
