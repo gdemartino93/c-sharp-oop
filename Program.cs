@@ -4,11 +4,22 @@
     {
         static void Main(string[] args)
         {
-            Persona luca = new Persona("Gianluca", "Rossi", "12/07/1993", "Barletta");
-            Persona marco = new Persona("Marco", "Bianchi", "01/01/1980", "Roma", 1200);
-            Persona anna = new Persona("Anna","Verdi", "12/12/1970", "Bari",-100);
+            Console.WriteLine("Inserisci il nome della persona");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Inserisci il cognome della persona");
+            string cognome = Console.ReadLine();
+            Console.WriteLine("Inserisci la data di nascita della persona");
+            string dataDiNascita = Console.ReadLine();
+            Console.WriteLine("Inserisci la città della persona");
+            string citta = Console.ReadLine();
+            Console.WriteLine("Inserisci lo stipendio della persona");
+            int stipendio = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(anna.Stipendio);
+            Persona nuovoUser = new Persona(nome,cognome,dataDiNascita,citta,stipendio);
+
+
+            Console.WriteLine($"{Persona.id} - La nuova persona creata si chiama {nuovoUser.Nome} {nuovoUser.Cognome}, è nata il {nuovoUser.DataDiNascita} a {nuovoUser.Citta}. Il suo stipendio è di {nuovoUser.Stipendio} euro");
+
         }
     }
 }

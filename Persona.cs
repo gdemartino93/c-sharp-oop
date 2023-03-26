@@ -8,6 +8,7 @@ namespace OOP
 {
     internal class Persona
     {
+        static public int id = 0;
         private string nome;
         private string cognome;
         private string dataDiNascita;
@@ -39,6 +40,7 @@ namespace OOP
             DataDiNascita = dataDiNascita;
             Citta = citta;
             Stipendio = stipendio;
+            Persona.id++;
 
         }
 
@@ -48,6 +50,7 @@ namespace OOP
             Cognome = cognome;
             DataDiNascita = dataDiNascita;
             Citta = citta;
+            Persona.id++;
         }
 
         public void Saluto(string nome)
