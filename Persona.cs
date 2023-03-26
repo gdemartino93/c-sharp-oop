@@ -59,7 +59,7 @@ namespace OOP
         }
         public void Presentazione()
         {
-            Console.WriteLine($"Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Il mio stipendio è di {Stipendio} euro");
+            Console.WriteLine($"ID-{id}| Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Il mio stipendio è di {Stipendio} euro");
         }
 
     }
