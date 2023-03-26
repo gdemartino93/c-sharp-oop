@@ -41,5 +41,12 @@ namespace OOP
             Stipendio = stipendio;
 
         }
+        public Persona(string nome,string cognome,string dataDiNascita,string citta)
+        {
+            Nome = nome;
+            Cognome = cognome;
+            DataDiNascita = dataDiNascita;
+            Citta = citta;
+        }
     }
 }
