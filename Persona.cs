@@ -28,9 +28,9 @@ namespace OOP
             id++;
         }
 
-        public void Saluto(string nome)
+        public void Saluto()
         {
-            Console.WriteLine($"Ciao {nome}");
+            Console.WriteLine("Ciao sono una persona");
         }
 
         public void Presentazione()

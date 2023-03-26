@@ -35,5 +35,9 @@ namespace OOP
             this.materia = materia;
             this.stipendio = stipendio;
         }
+        public void Presentazione()
+        {
+            Console.WriteLine($"Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Insegno {materia} e il mio stipendio è di {stipendio}");
+        }
     }
 }

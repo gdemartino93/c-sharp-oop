@@ -10,7 +10,8 @@
             List <Docente> docenti = new List<Docente> ();//creiamo una list di docenti
             List <Studente> studenti = new List<Studente> ();//creiamo una list di studenti
 
-          while(risposta == "y")
+
+            while(risposta == "y")
             {
                 Console.WriteLine("Inserisci il nome della persona");
                 string nome = Console.ReadLine();

@@ -14,5 +14,9 @@ namespace OOP
         {
             this.classe = classe;
         }
+        public void Presentazione()
+        {
+            Console.WriteLine($"Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Frequenta la classe {classe}");
+        }
     }
 }
