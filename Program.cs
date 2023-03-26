@@ -46,22 +46,15 @@
                     Console.WriteLine("Vuoi inserire un altra persona? y/n");
                     risposta = (Console.ReadLine()).ToLower();
                 }
-
-                foreach(Docente docente in docenti)
-                {
-                    docente.Presentazione();
-                }
-                foreach(Studente studente in studenti)
-                {
-                    studente.Presentazione();
-                }
-
-          
-
- 
-
-          }
-
+            }
+            foreach (Docente docente in docenti)
+            {
+                docente.Presentazione();
+            }
+            foreach (Studente studente in studenti)
+            {
+                studente.Presentazione();
+            }
         }
     }
 }
