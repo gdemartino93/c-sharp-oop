@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Studente
+    internal class Studente : Persona
     {
+        private string classe;
+
+        public Studente(string nome,string cognome,string dataDiNascita,string citta,string classe):base(nome,cognome,dataDiNascita,citta)
+        {
+            this.classe = classe;
+        }
     }
 }

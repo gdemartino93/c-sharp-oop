@@ -25,7 +25,6 @@ namespace OOP
             Cognome = cognome;
             DataDiNascita = dataDiNascita;
             Citta = citta;
-
             id++;
         }
 
