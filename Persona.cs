@@ -13,13 +13,18 @@ namespace OOP
         private string dataDiNascita;
         private string citta;
 
+        public string Nome { get; set; }
+        public string Cognome { get; set; }
+        public string DataDiNascita { get; set; }
+        public string Citta { get; set; }
 
         public Persona(string nome, string cognome, string dataDiNascita, string citta)
         {
-            this.nome = nome;
-            this.cognome = cognome;
-            this.dataDiNascita = dataDiNascita;
-            this.citta = citta;
+            Nome = nome;
+            Cognome = cognome;
+            DataDiNascita = dataDiNascita;
+            Citta = citta;
+
         }
     }
 }
