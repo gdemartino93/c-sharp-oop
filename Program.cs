@@ -49,11 +49,11 @@
 
                 foreach(Docente docente in docenti)
                 {
-                    Console.WriteLine(docente.Nome);
+                    docente.Presentazione();
                 }
                 foreach(Studente studente in studenti)
                 {
-                    Console.WriteLine(studente.Nome);
+                    studente.Presentazione();
                 }
 
           
