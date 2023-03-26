@@ -31,6 +31,17 @@
                     string materia = Console.ReadLine();
                     Docente docente = new Docente(nome, cognome, dataDiNascita, citta, stipendio, materia);
                     docenti.Add(docente);
+
+                    Console.WriteLine("Vuoi inserire un altra persona? y/n");
+                    risposta = (Console.ReadLine()).ToLower();
+                }
+                else
+                {
+                    Console.WriteLine("Inserisci la classe dello studente");
+                    string classe = Console.ReadLine();
+                    Studente studente = new Studente(nome, cognome, dataDiNascita, citta, classe);
+                    studenti.Add(studente);
+
                     Console.WriteLine("Vuoi inserire un altra persona? y/n");
                     risposta = (Console.ReadLine()).ToLower();
                 }
@@ -38,6 +49,10 @@
                 foreach(Docente docente in docenti)
                 {
                     Console.WriteLine(docente.Nome);
+                }
+                foreach(Studente studente in studenti)
+                {
+                    Console.WriteLine(studente.Nome);
                 }
 
           
