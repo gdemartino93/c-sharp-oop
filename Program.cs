@@ -7,7 +7,8 @@
 
 
             string risposta = "y"; //settiamo risposta y per eseguire il ciclo per la prima volta
-            List<Persona> persone = new List<Persona>(); //creiamo una list di persone
+            List <Docente> docenti = new List<Docente> ();//creiamo una list di docenti
+            List <Studente> studenti = new List<Studente> ();//creiamo una list di studenti
 
           while(risposta == "y")
             {
@@ -25,15 +26,10 @@
                 Console.WriteLine("Vuoi inserire un altra persona? y/n");
                 risposta = (Console.ReadLine()).ToLower();
 
-                Persona nuovoUser = new Persona(nome,cognome,dataDiNascita,citta,stipendio);
-                persone.Add(nuovoUser);//pushiamo nuovouser all'interno della lista
+ 
 
           }
 
-          foreach(Persona persona in persone)
-            {
-                persona.Presentazione();
-            }
         }
     }
 }
