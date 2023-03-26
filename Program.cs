@@ -5,6 +5,11 @@
         static void Main(string[] args)
         {
 
+
+            Docente matematica = new Docente("asd", "asd", "asd", "asd", 1212, "matematica");
+    
+
+
             string risposta = "y"; //settiamo risposta y per eseguire il ciclo per la prima volta
             List<Persona> persone = new List<Persona>(); //creiamo una list di persone
 

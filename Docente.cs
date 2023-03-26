@@ -30,7 +30,7 @@ namespace OOP
             } 
         } 
 
-        public Docente(string nome,string cognome,string dataDiNascita,string citta,int stipendio,string materia ):base(nome,cognome,dataDiNascita,citta,stipendio)
+        public Docente(string nome,string cognome,string dataDiNascita,string citta,int stipendio,string materia ):base(nome,cognome,dataDiNascita,citta)
         {
             this.materia = materia;
             this.stipendio = stipendio;
