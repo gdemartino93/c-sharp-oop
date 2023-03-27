@@ -74,6 +74,11 @@
             {
                 studente.Presentazione();
             }
+
+            for (int i = 0;i < docenti.Count;i++)
+            {
+                Console.WriteLine(docenti.Count);
+            }
         }
     }
 }
