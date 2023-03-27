@@ -7,6 +7,8 @@ internal class Docente : Persona , IEquatable<Docente>
     private string materia;
     private int stipendio;
 
+    public override string Nome { get; set; }
+    public override string Cognome { get; set; }
     public int Id { get { return id; } }
     public string Materia { get; set; }
     public int Stipendio

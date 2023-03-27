@@ -12,6 +12,8 @@ namespace OOP
         private int id;
         private string classe;
 
+        public override string Nome { get; set; }
+        public override string Cognome { get; set; }
         public int Id { get; set; }
         public Studente(string nome,string cognome,string dataDiNascita,string citta,string classe):base(nome,cognome,dataDiNascita,citta)
         {
