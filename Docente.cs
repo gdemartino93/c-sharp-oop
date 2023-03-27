@@ -1,6 +1,6 @@
 ﻿using OOP;
 
-internal class Docente : Persona
+internal class Docente : Persona , IEquatable<Docente>
 {
     private static int lastId = 0;
     private int id;
@@ -36,6 +36,10 @@ internal class Docente : Persona
     }
     public override void Presentazione()
     {
-        Console.WriteLine($"ID- {Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Insegno {materia} e il mio stipendio è di {stipendio}");
+        Console.WriteLine($"ID- {Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Insegno {Materia} e il mio stipendio è di {Stipendio}");
+    }
+    public bool Equals(Docente docente)
+    {
+        return Materia == docente.Materia;
     }
 }
