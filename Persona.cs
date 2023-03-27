@@ -36,7 +36,7 @@ namespace OOP
             Console.WriteLine("Ciao sono una persona");
         }
 
-        public void Presentazione()
+        public virtual void Presentazione()
         {
             Console.WriteLine($"ID-{Id}| Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}.");
         }

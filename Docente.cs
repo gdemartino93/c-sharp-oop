@@ -34,7 +34,7 @@ internal class Docente : Persona
         Stipendio = stipendio;
         id = ++lastId;
     }
-    public void Presentazione()
+    public override void Presentazione()
     {
         Console.WriteLine($"ID- {Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Insegno {materia} e il mio stipendio è di {stipendio}");
     }

@@ -18,7 +18,7 @@ namespace OOP
             this.classe = classe;
             Id = ++lastId;
         }
-        public void Presentazione()
+        public override void Presentazione()
         {
             Console.WriteLine($"ID-{Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Frequenta la classe {classe}");
         }
