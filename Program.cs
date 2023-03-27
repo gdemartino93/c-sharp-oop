@@ -1,4 +1,6 @@
-﻿namespace OOP
+﻿using System.Diagnostics;
+
+namespace OOP
 {
     internal class Program
     {
@@ -8,6 +10,7 @@
             List<Docente> docenti = new List<Docente>(); //creiamo una list di docenti
             List<Studente> studenti = new List<Studente>(); //creiamo una list di studenti
 
+    
             while (risposta == "y")
             {
                 Console.WriteLine("Inserisci il nome della persona");
@@ -48,9 +51,25 @@
                     int stipendio = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Inserisci la materia insegnata");
                     string materia = Console.ReadLine();
-                    Docente docente = new Docente(nome, cognome, dataDiNascita, citta, stipendio, materia);
-                    docenti.Add(docente);
+                    bool materiaEsistente = false;
+                    foreach(Docente x in docenti)
+                    {
+                        if (materia.Equals(x.Materia))
+                        {
+                            materiaEsistente = true;
+                            break;
+                        }
+                    };
+                    if (materiaEsistente)
+                    {
+                        Console.WriteLine("Esiste già un insegnante per questa materia");
+                    }
+                    else
+                    {
+                        Docente docente = new Docente(nome, cognome, dataDiNascita, citta, stipendio, materia);
 
+                        docenti.Add(docente);
+                    }
                     Console.WriteLine("Vuoi inserire un'altra persona? y/n");
                     risposta = Console.ReadLine().ToLower();
                 }
@@ -73,11 +92,6 @@
             foreach (Studente studente in studenti)
             {
                 studente.Presentazione();
-            }
-
-            for (int i = 0;i < docenti.Count;i++)
-            {
-                Console.WriteLine(docenti.Count);
             }
         }
     }
