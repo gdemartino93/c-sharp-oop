@@ -15,6 +15,8 @@ namespace OOP
         private string dataDiNascita;
         private string citta;
 
+        
+
         public string Nome { get; set; }
         public string Cognome { get; set; }
         public string DataDiNascita { get; set; }

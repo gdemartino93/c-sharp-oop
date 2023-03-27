@@ -22,5 +22,10 @@ namespace OOP
         {
             Console.WriteLine($"ID-{Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Frequenta la classe {classe}");
         }
+        //metodo astratto di persona
+        public override void Saluto()
+        {
+            Console.WriteLine("Ciao raga come va? sono lo studente");
+        }
     }
 }

@@ -38,6 +38,13 @@ internal class Docente : Persona , IEquatable<Docente>
     {
         Console.WriteLine($"ID- {Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Insegno {Materia} e il mio stipendio è di {Stipendio}");
     }
+
+    //metodo astratto che va importato obbligatoriamente
+    public override void Saluto()
+    {
+        Console.WriteLine("Buongiorno sono il docente");
+    }
+    //interfaccia che potremmo usare per controllare se 2 oggetti hanno la stessa materia
     public bool Equals(Docente docente)
     {
         return Materia == docente.Materia;

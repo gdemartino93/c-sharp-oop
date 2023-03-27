@@ -10,7 +10,14 @@ namespace OOP
             List<Docente> docenti = new List<Docente>(); //creiamo una list di docenti
             List<Studente> studenti = new List<Studente>(); //creiamo una list di studenti
 
-    
+
+            Persona persona = new Studente("marco", "rossi", "121293", "bari", "5d");
+            Persona personadue = new Docente("sara", "rossi", "121290", "bari", 1200, "matematica");
+
+            persona.Saluto();
+            personadue.Saluto();
+
+
             while (risposta == "y")
             {
                 Console.WriteLine("Inserisci il nome della persona");
