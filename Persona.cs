@@ -8,7 +8,8 @@ namespace OOP
 {
     internal class Persona
     {
-        private static int id = 0;
+        private static int lastId = 0;
+        private int id;
         private string nome;
         private string cognome;
         private string dataDiNascita;
@@ -19,13 +20,15 @@ namespace OOP
         public string DataDiNascita { get; set; }
         public string Citta { get; set; }
 
+        public int Id { get; set; }
+
         public Persona(string nome, string cognome, string dataDiNascita, string citta)
         {
             Nome = nome;
             Cognome = cognome;
             DataDiNascita = dataDiNascita;
             Citta = citta;
-            id++;
+            Id = lastId;
         }
 
         public void Saluto()
@@ -35,7 +38,7 @@ namespace OOP
 
         public void Presentazione()
         {
-            Console.WriteLine($"ID-{id}| Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}.");
+            Console.WriteLine($"ID-{Id}| Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}.");
         }
     }
 }

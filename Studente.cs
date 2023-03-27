@@ -8,15 +8,19 @@ namespace OOP
 {
     internal class Studente : Persona
     {
+        private static int lastId = 0;
+        private int id;
         private string classe;
 
+        public int Id { get; set; }
         public Studente(string nome,string cognome,string dataDiNascita,string citta,string classe):base(nome,cognome,dataDiNascita,citta)
         {
             this.classe = classe;
+            Id = ++lastId;
         }
         public void Presentazione()
         {
-            Console.WriteLine($"Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Frequenta la classe {classe}");
+            Console.WriteLine($"ID-{Id} || Sono {Nome} {Cognome}, sono nato il {DataDiNascita} a {Citta}. Frequenta la classe {classe}");
         }
     }
 }
