@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    internal class Persona
+    abstract class Persona
     {
         private static int lastId = 0;
         private int id;
@@ -31,10 +31,7 @@ namespace OOP
             Id = lastId;
         }
 
-        public void Saluto()
-        {
-            Console.WriteLine("Ciao sono una persona");
-        }
+        public abstract void Saluto();
 
         public virtual void Presentazione()
         {
